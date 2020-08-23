@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Style Sheet-->
+    <link rel="stylesheet" href="styles.css">
+    <!--JavaScript-->
+    <link rel="stylesheet" href="script.js">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="wpbackground">
+          <div class="d-flex flex-column h-100">
+                <div class="container" id="wpMain">
+                    <div class="row">
+                        <div id="wpTitle" class="col text-center">
+                            YOUR PRO WEATHER APP
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="wpCurrent" class="col">
+                            <div class="row">
+                        <div id="wpTemp" class="col-sm">
+                            <div id="location" class="row col d-md-inline-block">
+                                Sterrett, AL
+                            </div>
+                            <div class="row col d-md-inline-block" id="dayTime">Sunday, 12:00PM</div>
+                            <div class="row col d-md-inline-block" id="summary">Mostly Sunny</div>
+                            <div class="row col d-md-inline-block" id="currentTemp">90&deg;</div>
+                        </div>
+                        <div class="col-sm">
+                            <img id="weatherIcon" src="images/MostlySunny.png" class="img-fluid">
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div id="wpConditions" class="col-md">
+                            <div class="row">
+                                <div id="percipitation" class="col-md">Percipitation 20%</div>
+                            </div>
+                            <div class="row">
+                                <div id="humidity" class="col-md">Humidity 70%</div>
+                            </div>
+                            <div class="row">
+                                <div id="wind" class="col-md">Wind 15mph</div>
+                            </div>
+                        </div>
+                        <div id="wpForcast" class="col-md">
+                            <ul class="nav nav-tabs" id="forcastTab">
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#weekly">Hourly</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#daily">Weekly</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane container active" id="daily">
+                                    <table id="dailyForcast" width=100%></table>
+                                </div>
+                                <div class="tab-pane container fade" id="weekly">
+                                    <table id="weeklyForcast" width=100%></table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="wpFooter" class="col text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="https://darksky.net/poweredby/" target="_blank">Powered by Dark Sky</a>
+                                </div>
+                                <div class="col"> 
+                                    <a href=""></a> <!--link to your linkedIn?-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+      </div>
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

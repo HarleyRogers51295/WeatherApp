@@ -1,0 +1,128 @@
+body {
+    background: #ffd89b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+:root {
+    --Color-dgrey-rbga: rgba(33, 33, 33, 1);
+    --Color-greyB-rbga: rgba(44, 66, 81, .5);
+    --Color-blue-rbga: rgba(0, 115, 171, .5);
+    --Color-orange-rbga: rgba(247, 148, 29, .5);
+    --Color-white-rbga: rgba(223, 227, 228, 1);
+    --Color-black-rbga: rgba(0, 0, 0, 1);
+}
+
+/*IDs*/
+#wpTitle {
+    font-family: titling-gothic-fb-wide, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    color: var(--Color-dgrey-rbga);
+    -webkit-text-fill-color: var(--Color-white-rbga);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--Color-dgrey-rbga);
+}
+#wpCurrent {
+    background-color: var(--Color-greyB-rbga);
+    color: var(--Color-white-rbga);
+    resize: vertical;
+    padding: 20px;
+}
+#forecastTab li a.active {
+    border-bottom-color: transparent;
+    background-color: var(--Color-orange-rbga);
+    color: var(--Color-dgrey-rbga);
+    font-weight: bold;
+}
+#forcastTab li a {
+    border-bottom-color: transparent;
+    background-color: lightgrey;
+    color: var(--Color-white-rbga);
+    font-weight: 400;
+}
+#weatherIcon {
+    max-width: 100%;
+    height: auto;
+}
+#location {
+    font-weight: bolder;
+}
+#wpMain {
+    color: var(--Color-white-rbga);
+    padding: 20px;
+    resize: vertical;
+}
+#currentTemp {
+    font-size: 5em;
+    font-family: titling-gothic-fb-wide, sans-serif;
+    color: var(--Color-white-rbga);
+    -webkit-text-fill-color: var(--Color-white-rbga);
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: var(--Color-dgrey-rbga);
+}
+#wpConditions {
+    background-color:var(--Color-orange-rbga);
+    color: var(--Color-white-rbga);
+    padding: 20px;
+    resize: vertical;
+}
+#wpForcast {
+    background-color: var(--Color-blue-rbga);
+    color: var(--Color-white-rbga);
+    padding: 20px;
+    resize: vertical;
+    font-size: 1em;
+}
+#wpFooter {
+    font-size: 1em;
+    color: var(--Color-dgrey-rbga);
+}
+#wpFooter div a {
+    font-size: 1em;
+    color: var(--Color-dgrey-rbga);
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #wpTitle {
+        font-size: 1.5em;
+    }
+
+
+    #wpCurrent,
+    #wpConditions {
+        font-size: 1.5em;
+    }
+}
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+    #wpTitle {
+        font-size: 2em;
+    }
+
+    #wpCurrent,
+    #wpConditions {
+        font-size: 1.5em;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #wpTitle {
+        font-size: 2em;
+    }
+
+    #wpCurrent,
+    #wpForcast {
+        font-size: 1.5em;
+    }
+
+
+}
+@media (min-width :992px) {
+    #wpBackground {
+        font-size: 1em;
+    }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
